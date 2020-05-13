@@ -109,7 +109,7 @@ Python
 - 2.7.18
 - 3.5.9
 - 3.6.10
-- 3.7.7 (default)
+- 3.7.7
 - 3.8.2
 
 ### Environment variables to use toolcache tools
