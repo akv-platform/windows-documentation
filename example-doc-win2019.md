@@ -16,7 +16,7 @@
 - Node.js v12.16.3
 
 ### Visual Studio 2019 Enterprise (16.5.4+30011.22)
-Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
+`Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise`
 
 Workloads and components:
 - Component.Dotfuscator
