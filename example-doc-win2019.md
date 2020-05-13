@@ -15,6 +15,109 @@
 - PowerShell Core 7.0.0
 - Node.js v12.16.3
 
+### Package Management
+- Chocolatey 0.10.15
+- Vcpkg 2020.02.04
+- NPM 6.14.4
+- Yarn 1.22.4
+- Pip 20.0.2 (python 3.7.7)
+- Miniconda 4.6.14
+- RubyGems 3.1.2
+- Helm v3.2.0+ge11b7ce
+- Composer 1.10.5 2020-04-10 11:44:22
+
+### Project Management
+- Ant 1.10.5
+- Maven 3.6.3
+- Gradle 6.3
+
+### Tools
+- Azure CosmosDb Emulator 2.9.2.0
+- Bazel 3.1.0
+- Bazelisk 1.4.0
+- CMake 3.17.1
+- Docker 19.03.5
+- Docker-compose 1.25.4
+- Git: 2.26.2
+- Git LFS: 2.10.0
+- Inno Setup 6.0.4
+- jq 1.6
+- Kubectl v1.18.2
+- Kind v0.7.0
+- MinGW 8.1.0
+- MySQL 5.7.21.0
+- Mercurial 5.0
+- NSIS 3.5
+- Packer 1.5.5
+- SQLServer PS 21.1.18221
+- SQLPS 1.0
+- Subversion (SVN) 1.8.17
+- VSWhere 2.8.4
+- WinAppDriver 1.1.1809.18001
+- zstd 1.4.0
+
+### CLI Tools
+- Azure CLI 2.5.0
+- Azure DevOps CLI extension 0.18.0
+- AWS SAM CLI 0.48.0
+- AWS CLI 2.0.10
+- Alibaba Cloud CLI 3.0.26
+- Cloud Foundry CLI 6.51.0
+- Hub CLI: 2.14.2
+
+### Browsers and webdrivers
+- Google Chrome 81.0.4044.122
+- Chrome Driver 81.0.4044.69
+- Microsoft Edge 81.0.416.64
+- Microsoft Edge Driver 81.0.416.64
+- Mozilla Firefox 75.0
+- Gecko Driver 0.26.0
+- IE Driver 3.8.0.0
+
+### Toolcache (architecture x64)
+Ruby
+- 2.4.10
+- 2.5.8 (default)
+- 2.6.6
+- 2.7.1
+
+Python
+- 2.7.18
+- 3.5.9
+- 3.6.10
+- 3.7.7 (default)
+- 3.8.2
+
+Go
+- 1.9.7
+- 1.10.8
+- 1.11.13
+- 1.12.17
+- 1.13.10
+- 1.14.2 (default)
+
+PyPy
+- 2.7.13
+- 3.6.9
+
+Boost
+- 1.69.0
+- 1.72.0
+
+### Toolcache (architecture x86)
+Python
+- 2.7.18
+- 3.5.9
+- 3.6.10
+- 3.7.7 (default)
+- 3.8.2
+
+### Environment variables to use toolcache tools
+| Tool | Version | Env variable |
+|-|-|-|
+| Boost | 1.69.0<br>1.72.0 | BOOST_ROOT_1_69_0<br>BOOST_ROOT_1_72_0 |
+| Go | 1.9.7<br>1.10.8<br>1.11.13<br>1.12.17<br>1.13.10<br>1.14.2 | GOROOT_1_9_X64<br>GOROOT_1_10_X64<br>GOROOT_1_11_X64<br>GOROOT_1_12_X64<br>GOROOT_1_13_X64<br>GOROOT_1_14_X64 |
+
 ### Visual Studio 2019 Enterprise (16.5.4+30011.22)
 `Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise`
 
@@ -116,123 +219,19 @@ Extensions:
 - WIX Toolset Version: 3.11.4516
 - WIX Toolset Studio 2019 Extension Version: 1.0.0.4
 
-
 ### .NET Core SDK
 `Location C:\Program Files\dotnet\sdk`
-- 2.1.300
-- 2.1.301
-- ...
-- 3.1.200
-- 3.1.201
+- 2.1.300, 2.1.301, ... , 3.1.200, 3.1.201
 
 ### .NET Core Runtime
 `Location C:\Program Files\dotnet\shared\Microsoft.NETCore.App`
-- 2.1.0
-- 2.1.1
-- ...
-- 3.1.2
-- 3.1.3
+- 2.1.0, 2.1.1, ... , 3.1.2, 3.1.3
 
 ### .NET Framework
+`Location C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools`
 - Version: 4.8.03761
-- Path: C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools
 
-### Package Management
-- Chocolatey 0.10.15
-- Vcpkg 2020.02.04
-- NPM 6.14.4
-- Yarn 1.22.4
-- Pip 20.0.2 (python 3.7.7)
-- Miniconda 4.6.14
-- RubyGems 3.1.2
-- Helm v3.2.0+ge11b7ce
-- Composer 1.10.5 2020-04-10 11:44:22
-
-### Project Management
-- Ant 1.10.5
-- Maven 3.6.3
-- Gradle 6.3
-
-### Tools
-- Docker 19.03.5
-- Docker-compose 1.25.4
-- Git: 2.26.2
-- Git LFS: 2.10.0
-- Subversion (SVN) 1.8.17
-- Packer 1.5.5
-- jq 1.6
-- MySQL 5.7.21.0
-- SQLServer PS 21.1.18221
-- SQLPS 1.0
-- MinGW 8.1.0
-- zstd 1.4.0
-- bazel 3.1.0
-- bazelisk v1.4.0
-- Kubectl v1.18.2
-- CMake 3.17.1
-- Azure CosmosDb Emulator 2.9.2.0
-- Mercurial 5.0
-- zstd 1.4.0
-- Inno Setup 6.0.4
-- NSIS 3.5
-- VSWhere 2.8.4
-- Kind v0.7.0
-- WinAppDriver 1.1.1809.18001
-
-### CLI Tools
-- Azure CLI 2.5.0
-- Azure DevOps CLI extension 0.18.0
-- AWS SAM CLI 0.48.0
-- AWS CLI 2.0.10
-- Alibaba Cloud CLI 3.0.26
-- Cloud Foundry CLI 6.51.0
-- Hub CLI: 2.14.2
-
-### Utilities
-??
-
-### Browsers and webdrivers
-- Google Chrome 81.0.4044.122
-- Microsoft Edge 81.0.416.64
-- Mozilla Firefox 75.0
-- Chrome Driver 81.0.4044.69
-- Gecko Driver 0.26.0
-- IE Driver 3.8.0.0
-- Microsoft Edge Driver 81.0.416.64
-
-### Toolcache (architecture x64)
-`Location C:\hostedtoolcache\<tool_name>\<version>\x64`
-#### Ruby
-- 2.4.10
-- 2.5.8 (default)
-- 2.6.6
-- 2.7.1
-
-#### Python
-- 2.7.18
-- 3.5.9
-- 3.6.10
-- 3.7.7 (default)
-- 3.8.2
-
-#### Boost
-- 1.69.0
-- 1.72.0
-
-### Toolcache (architecture x86)
-`Location C:\hostedtoolcache\<tool_name>\<version>\x86`
-#### Python
-- 2.7.18
-- 3.5.9
-- 3.6.10
-- 3.7.7 (default)
-- 3.8.2
-
-#### PyPy
-- 2.7.13
-- 3.6.9
-
-### Azure Powershell module
+### Azure Powershell modules
 | Module | Version | Path |
 |-|-|-|
 | Azure PowerShell module | 2.1.0 (installed)<br>3.8.0<br>4.2.1<br>5.1.1<br>5.3.0 | C:\Modules\azure_\<version\>\Azure\\<version\>\Azure.psd1 |
