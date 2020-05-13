@@ -201,6 +201,7 @@ Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 - Microsoft Edge Driver 81.0.416.64
 
 ### Toolcache (architecture x64)
+`Location C:\hostedtoolcache\<tool name>\<version>\x64`
 #### Ruby
 - 2.4.10
 - 2.5.8 (default)
@@ -219,6 +220,7 @@ Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 - 1.72.0
 
 ### Toolcache (architecture x86)
+`Location C:\hostedtoolcache\<tool name>\<version>\x86`
 #### Python
 - 2.7.18
 - 3.5.9
