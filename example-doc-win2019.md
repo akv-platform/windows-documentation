@@ -74,18 +74,25 @@
 - Gecko Driver 0.26.0
 - IE Driver 3.8.0.0
 
-### Toolcache (architecture x64)
+### Toolcache
 Ruby
 - 2.4.10
 - 2.5.8 (default)
 - 2.6.6
 - 2.7.1
 
-Python
+Python (x64)
 - 2.7.18
 - 3.5.9
 - 3.6.10
 - 3.7.7 (default)
+- 3.8.2
+
+Python (x86)
+- 2.7.18
+- 3.5.9
+- 3.6.10
+- 3.7.7
 - 3.8.2
 
 Go
@@ -103,14 +110,6 @@ PyPy
 Boost
 - 1.69.0
 - 1.72.0
-
-### Toolcache (architecture x86)
-Python
-- 2.7.18
-- 3.5.9
-- 3.6.10
-- 3.7.7
-- 3.8.2
 
 ### Environment variables to use toolcache tools
 | Tool | Version | Env variable |
