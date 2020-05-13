@@ -115,8 +115,8 @@ Python
 ### Environment variables to use toolcache tools
 | Tool | Version | Env variable |
 |-|-|-|
-| Boost | 1.69.0<br>1.72.0 | BOOST_ROOT_1_69_0<br>BOOST_ROOT_1_72_0 |
-| Go | 1.9.7<br>1.10.8<br>1.11.13<br>1.12.17<br>1.13.10<br>1.14.2 | GOROOT_1_9_X64<br>GOROOT_1_10_X64<br>GOROOT_1_11_X64<br>GOROOT_1_12_X64<br>GOROOT_1_13_X64<br>GOROOT_1_14_X64 |
+| Boost | 1.69.0<br>1.72.0 | `BOOST_ROOT_1_69_0`<br>`BOOST_ROOT_1_72_0` |
+| Go | 1.9.7<br>1.10.8<br>1.11.13<br>1.12.17<br>1.13.10<br>1.14.2 | `GOROOT_1_9_X64`<br>`GOROOT_1_10_X64`<br>`GOROOT_1_11_X64`<br>`GOROOT_1_12_X64`<br>`GOROOT_1_13_X64`<br>`GOROOT_1_14_X64` |
 
 ### Visual Studio 2019 Enterprise (16.5.4+30011.22)
 `Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise`
