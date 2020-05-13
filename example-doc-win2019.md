@@ -12,15 +12,13 @@
 - PHP 7.4.5
 - julia 1.4.1
 - Perl 5.30.2
-- TypeScript 3.8.3
 - PowerShell Core 7.0.0
 - Node.js v12.16.3
 
-### Visual Studio 2019 Enterprise
-- Version: 16.5.4+30011.22
-- Location: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
+### Visual Studio 2019 Enterprise (16.5.4+30011.22)
+Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
-#### Visual Studio workloads and components:
+#### Workloads and components:
 - Component.Dotfuscator
 - Component.Linux.CMake
 - Component.UnityEngine.x64
@@ -109,17 +107,13 @@
 - Microsoft.VisualStudio.Workload.Universal
 - Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-#### Microsoft SSDT Visual Studio 2019 Extensions
-- Microsoft Analysis Services Projects Version: 2.9.8
-- SQL Server Integration Services Projects Version: 3.6
-- Microsoft Reporting Services Projects Version: 2.6.5
-
-#### Windows Driver Kit
+#### Extensions
+- SSDT Microsoft Analysis Services Projects Version: 2.9.8
+- SSDT SQL Server Integration Services Projects Version: 3.6
+- SSDT Microsoft Reporting Services Projects Version: 2.6.5
 - WDK Version: 10.1.18362.1
 - WDK Visual Studio Extension Version: 10.0.18346.0
-
-#### WIX Tools
-- Toolset Version: 3.11.4516
+- WIX Toolset Version: 3.11.4516
 - WIX Toolset Studio 2019 Extension Version: 1.0.0.4
 
 
@@ -154,7 +148,6 @@
 - Docker-compose 1.25.4
 - Git: 2.26.2
 - Git LFS: 2.10.0
-- Hub CLI: 2.14.2
 - Subversion (SVN) 1.8.17
 - Packer 1.5.5
 - jq 1.6
@@ -165,30 +158,33 @@
 - zstd 1.4.0
 - bazel 3.1.0
 - bazelisk v1.4.0
-- Azure CLI 2.5.0
-- AWS SAM CLI 0.48.0
-- AWS CLI 2.0.10
 - Kubectl v1.18.2
 - CMake 3.17.1
 - Azure CosmosDb Emulator 2.9.2.0
-- Azure DevOps Cli extension 0.18.0
 - Mercurial 5.0
 - zstd 1.4.0
 - Inno Setup 6.0.4
-- TLS12 1.2
-- Nullsoft Install System (NSIS) 3.5
-- Cloud Foundry CLI 6.51.0
-- VSWhere 2.8.4+ff0de50053 - shim 0.8.1
+- NSIS 3.5
+- VSWhere 2.8.4
 - Kind v0.7.0
-- Alibaba Cloud CLI 3.0.26
 - WinAppDriver 1.1.1809.18001
 
-### Browsers
+### CLI Tools
+- Azure CLI 2.5.0
+- Azure DevOps CLI extension 0.18.0
+- AWS SAM CLI 0.48.0
+- AWS CLI 2.0.10
+- Alibaba Cloud CLI 3.0.26
+- Cloud Foundry CLI 6.51.0
+- Hub CLI: 2.14.2
+
+### Utilities
+??
+
+### Browsers and webdrivers
 - Google Chrome 81.0.4044.122
 - Microsoft Edge 81.0.416.64
 - Mozilla Firefox 75.0
-
-### Selenium Web Drivers
 - Chrome Driver 81.0.4044.69
 - Gecko Driver 0.26.0
 - IE Driver 3.8.0.0
@@ -219,9 +215,9 @@
 ### Azure Powershell modules
 | Module | Version | Path |
 |-|-|-|
-| Azure PowerShell module | 2.1.0<br>3.8.0<br>4.2.1<br>5.1.1<br>5.3.0 | C:\Modules\azure_2.1.0\Azure\2.1.0\Azure.psd1<br>C:\Modules\azure_3.8.0\Azure\3.8.0\Azure.psd1<br>C:\Modules\azure_4.2.1\Azure\4.2.1\Azure.psd1<br>C:\Modules\azure_5.1.1\Azure\5.1.1\Azure.psd1<br>C:\Modules\azure_5.3.0\Azure\5.3.0\Azure.psd1 |
-| AzureRM PowerShell module | 2.1.0<br>3.8.0<br>4.2.1<br>5.1.1<br>6.7.0<br>6.13.1 | C:\Modules\azurerm_2.1.0\AzureRM\2.1.0\AzureRM.psd1<br>C:\Modules\azurerm_3.8.0\AzureRM\3.8.0\AzureRM.psd1<br>C:\Modules\azurerm_4.2.1\AzureRM\4.2.1\AzureRM.psd1<br>C:\Modules\azurerm_5.1.1\AzureRM\5.1.1\AzureRM.psd1<br>C:\Modules\azurerm_6.7.0\AzureRM\6.7.0\AzureRM.psd1<br>C:\Modules\azurerm_6.13.1\AzureRM\6.13.1\AzureRM.psd1 |
-| Az PowerShell module | 1.0.0<br>1.6.0<br>2.3.2<br>2.6.0<br>3.1.0<br>3.5.0 | C:\Modules\az_1.0.0\Az\1.0.0\Az.psd1<br>C:\Modules\az_1.6.0\Az\1.6.0\Az.psd1<br>C:\Modules\az_2.3.2\Az\2.3.2\Az.psd1<br>C:\Modules\az_2.6.0\Az\2.6.0\Az.psd1<br>C:\Modules\az_3.1.0\Az\3.1.0\Az.psd1<br>C:\Modules\az_3.5.0\Az\3.5.0\Az.psd1 |
+| Azure PowerShell module | 2.1.0 (installed)<br>3.8.0<br>4.2.1<br>5.1.1<br>5.3.0 | C:\Modules\azure_\<version\>\Azure\\<version\>\Azure.psd1 |
+| AzureRM PowerShell module | 2.1.0 (installed)<br>3.8.0<br>4.2.1<br>5.1.1<br>6.7.0<br>6.13.1 |C:\Modules\azurerm_\<version\>\AzureRM\\<version\>\AzureRM.psd1|
+| Az PowerShell module | 1.0.0<br>1.6.0<br>2.3.2<br>2.6.0<br>3.1.0<br>3.5.0 | C:\Modules\az_\<version\>\Az\\<version\>\Az.psd1 |
 ```
 Azure PowerShell module 2.1.0 and AzureRM PowerShell module 2.1.0 are installed
 and are available via 'Get-Module -ListAvailable'.
