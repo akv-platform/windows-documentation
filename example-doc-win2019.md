@@ -114,7 +114,7 @@ Boost
 - 1.69.0
 - 1.72.0
 
-### Environment variables to use toolcache tools
+### Environment variables to use cached tools
 | Tool | Version | Env variable |
 |-|-|-|
 | Boost | 1.69.0<br>1.72.0 | `BOOST_ROOT_1_69_0`<br>`BOOST_ROOT_1_72_0` |
