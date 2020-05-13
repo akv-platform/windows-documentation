@@ -18,7 +18,7 @@
 ### Visual Studio 2019 Enterprise (16.5.4+30011.22)
 Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 
-#### Workloads and components:
+Workloads and components:
 - Component.Dotfuscator
 - Component.Linux.CMake
 - Component.UnityEngine.x64
@@ -107,7 +107,7 @@ Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 - Microsoft.VisualStudio.Workload.Universal
 - Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-#### Extensions
+Extensions:
 - SSDT Microsoft Analysis Services Projects Version: 2.9.8
 - SSDT SQL Server Integration Services Projects Version: 3.6
 - SSDT Microsoft Reporting Services Projects Version: 2.6.5
