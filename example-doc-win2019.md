@@ -117,11 +117,21 @@ Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 - WIX Toolset Studio 2019 Extension Version: 1.0.0.4
 
 
-### .NET Core
-- SDK: 2.1.300, 2.1.301,... , 3.1.200, 3.1.201
-- SDK Path: C:\Program Files\dotnet\sdk
-- Runtime: 2.1.0, 2.1.1, 2.1.10, 2.111,... , 3.1.2, 3.1.3
-- Runtime Path: C:\Program Files\dotnet\shared\Microsoft.NETCore.App
+### .NET Core SDK
+`Location C:\Program Files\dotnet\sdk`
+- 2.1.300
+- 2.1.301
+- ...
+- 3.1.200
+- 3.1.201
+
+### .NET Core Runtime
+`Location C:\Program Files\dotnet\shared\Microsoft.NETCore.App`
+- 2.1.0
+- 2.1.1
+- ...
+- 3.1.2
+- 3.1.3
 
 ### .NET Framework
 - Version: 4.8.03761
@@ -190,29 +200,37 @@ Location C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise
 - IE Driver 3.8.0.0
 - Microsoft Edge Driver 81.0.416.64
 
-### Toolcache:
-#### Ruby (x64)
+### Toolcache (architecture x64)
+#### Ruby
 - 2.4.10
-- 2.5.8
+- 2.5.8 (default)
 - 2.6.6
 - 2.7.1
 
-#### Python (x86)(x64)
+#### Python
 - 2.7.18
 - 3.5.9
 - 3.6.10
-- 3.7.7
+- 3.7.7 (default)
 - 3.8.2
 
-#### PyPy (x86)
+#### Boost
+- 1.69.0
+- 1.72.0
+
+### Toolcache (architecture x86)
+#### Python
+- 2.7.18
+- 3.5.9
+- 3.6.10
+- 3.7.7 (default)
+- 3.8.2
+
+#### PyPy
 - 2.7.13
 - 3.6.9
 
-#### Boost
-- 1.69.0 [msvc-14.1]
-- 1.72.0 [msvc-14.2]
-
-### Azure Powershell modules
+### Azure Powershell module
 | Module | Version | Path |
 |-|-|-|
 | Azure PowerShell module | 2.1.0 (installed)<br>3.8.0<br>4.2.1<br>5.1.1<br>5.3.0 | C:\Modules\azure_\<version\>\Azure\\<version\>\Azure.psd1 |
@@ -225,7 +243,7 @@ All other versions are saved but not installed.
 ```
 
 ### Android SDK Build Tools
-`Location: C:\Program Files (x86)\Android\android-sdk\build-tools`
+`Location C:\Program Files (x86)\Android\android-sdk\build-tools`
 - 19.1.0
 - 20.0.0
 - 21.1.2
@@ -233,7 +251,7 @@ All other versions are saved but not installed.
 - 29.0.3
 
 ### Android SDK Platforms
-`Location: C:\Program Files (x86)\Android\android-sdk\platforms`
+`Location C:\Program Files (x86)\Android\android-sdk\platforms`
 - 4.4.2 (API 19)
 - 5.0.1 (API 21)
 - 5.1.1 (API 22)
