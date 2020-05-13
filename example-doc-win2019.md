@@ -1,4 +1,6 @@
 # Windows Server 2019
+- OS version: 10.0.17763 Build 17763
+- Image Version: 20200430.2
 
 ## Installed Software
 ### Languages and Runtimes
@@ -48,6 +50,7 @@
 - MySQL 5.7.21.0
 - Mercurial 5.0
 - NSIS 3.5
+- OpenSSL 1.1.1
 - Packer 1.5.5
 - SQLServer PS 21.1.18221
 - SQLPS 1.0
@@ -74,7 +77,7 @@
 - Gecko Driver 0.26.0
 - IE Driver 3.8.0.0
 
-### Toolcache
+### Cached tools
 Ruby
 - 2.4.10
 - 2.5.8 (default)
@@ -257,15 +260,6 @@ All other versions are saved but not installed.
 - 5.1.1 (API 22)
 - ...
 - 10 (API 29)
-
-### OpenSSL
-| Version | Path |
-|-|-|
-| 1.1.1 | C:\Program Files\OpenSSL\bin\openssl.exe |
-| 1.1.1d | C:\Strawberry\c\bin\openssl.exe |
-| 1.1.1f | C:\Program Files\Git\mingw64\bin\openssl.exe |
-| 1.1.1f | C:\Program Files\Git\usr\bin\openssl.exe |
-| 1.0.2j | C:\Program Files (x86)\Subversion\bin\openssl.exe |
 
 ### Cached Docker images
 - mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
