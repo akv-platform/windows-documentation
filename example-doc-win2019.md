@@ -201,7 +201,7 @@ Extensions:
 - Microsoft Edge Driver 81.0.416.64
 
 ### Toolcache (architecture x64)
-`Location C:\hostedtoolcache\<tool name>\<version>\x64`
+`Location C:\hostedtoolcache\<tool_name>\<version>\x64`
 #### Ruby
 - 2.4.10
 - 2.5.8 (default)
@@ -220,7 +220,7 @@ Extensions:
 - 1.72.0
 
 ### Toolcache (architecture x86)
-`Location C:\hostedtoolcache\<tool name>\<version>\x86`
+`Location C:\hostedtoolcache\<tool_name>\<version>\x86`
 #### Python
 - 2.7.18
 - 3.5.9
