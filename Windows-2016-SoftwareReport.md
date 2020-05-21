@@ -146,6 +146,7 @@ Set `Boost_NO_BOOST_CMAKE to ON`, to disable the search for boost-cmake.
 | PyPy 7.3.1 with MSC v.1912 32 bit | 3.6.9          | x86               |
 
 
+
 ### Visual Studio Enterprise 2017
 | Name                          | Version         | Path                                                           |
 | ----------------------------- | --------------- | -------------------------------------------------------------- |
@@ -432,11 +433,11 @@ Extensions:
 | NETFX 4.7.2 Tools | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 Tools |
 | NETFX 4.8 Tools   | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools   |
 ### Azure Powershell Modules
-| Module  | Version                                                         | Path                         |
-| ------- | --------------------------------------------------------------- | ---------------------------- |
-| Az      | 1.0.0<br>1.6.0<br>2.3.2<br>2.6.0<br>3.1.0<br>3.5.0<br>3.8.0     | C:\Modules\az_<version>      |
-| Azure   | 2.1.0 [Installed]<br>3.8.0<br>4.2.1<br>5.1.1<br>5.3.0           | C:\Modules\azure_<version>   |
-| AzureRM | 2.1.0 [Installed]<br>3.8.0<br>4.2.1<br>5.1.1<br>6.7.0<br>6.13.1 | C:\Modules\azurerm_<version> |
+| Module  | Version                                                         | Path                           |
+| ------- | --------------------------------------------------------------- | ------------------------------ |
+| Az      | 1.0.0<br>1.6.0<br>2.3.2<br>2.6.0<br>3.1.0<br>3.5.0<br>3.8.0     | C:\Modules\az_\<version\>      |
+| Azure   | 2.1.0 [Installed]<br>3.8.0<br>4.2.1<br>5.1.1<br>5.3.0           | C:\Modules\azure_\<version\>   |
+| AzureRM | 2.1.0 [Installed]<br>3.8.0<br>4.2.1<br>5.1.1<br>6.7.0<br>6.13.1 | C:\Modules\azurerm_\<version\> |
 ```
 Azure PowerShell module 2.1.0 and AzureRM PowerShell module 2.1.0 are installed
 and are available via 'Get-Module -ListAvailable'.
