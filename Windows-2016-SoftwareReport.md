@@ -26,8 +26,8 @@
 - pip 20.1.1 (python 3.7)
 - Miniconda 4.6.14
 - RubyGems 3.1.3
-- Helm v3.2.1+gfe51cd1
-- Composer 1.10.6 2020-05-06 10:28:10
+- Helm 3.2.1
+- Composer 1.10.6
 
 ### Project Management
 - Ant 1.10.5
@@ -78,72 +78,68 @@
 - IE Driver 3.8.0.0
 
 ### MSYS2
-`Location C:\msys64`
 - Pacman 5.2.1
 ```
+Location C:\msys64
 Note: MSYS2 is pre-installed on image but not added to PATH.
 ```
 ### Cached Tools
 #### Boost
-| Version_Name | Architecture_Name | Environment_Variable |
-| ------------ | ----------------- | -------------------- |
-| 1.69.0       | x64 x86           | BOOST_ROOT_1_69_0    |
-| 1.72.0       | x64 x86           | BOOST_ROOT_1_72_0    |
-##### Additional:
-> `BOOST_ROOT` is not set on images but it is required by CMake. Please make sure you set this variable
-> value to either `BOOST_ROOT_1_69_0` or `BOOST_ROOT_1_72_0` depending on the Boost version you are using.
+| Version | Architecture | Environment Variable |
+| ------- | ------------ | -------------------- |
+| 1.69.0  | x64, x86     | BOOST_ROOT_1_69_0    |
+| 1.72.0  | x64, x86     | BOOST_ROOT_1_72_0    |
+##### Notes:
+`
+1. Environment variable "BOOST_ROOT" is not set by default. Please make sure you set this variable value to proper value from table above depending on the Boost version you are using.
+2. If Boost was built using the boost-cmake project or from Boost 1.70.0 on it provides a package configuration file for use with find_package's config mode. This module looks for the package configuration file called BoostConfig.cmake or boost-config.cmake and stores the result in CACHE entry "Boost_DIR". If found, the package configuration file is loaded and this module returns with no further action. See documentation of the Boost CMake package configuration for details on what it provides. Set Boost_NO_BOOST_CMAKE to ON, to disable the search for boost-cmake.
 Link: https://cmake.org/cmake/help/latest/module/FindBoost.html
-If Boost was built using the `boost-cmake` project or from `Boost 1.70.0` on it provides a package
-configuration file for use with find\_package's config mode. This module looks for the package
-configuration file called BoostConfig.cmake or boost-config.cmake and stores the result in CACHE entry "Boost_DIR".
-If found, the package configuration file is loaded and this module returns with no further action.
-See documentation of the Boost CMake package configuration for details on what it provides.
-Set `Boost_NO_BOOST_CMAKE to ON`, to disable the search for boost-cmake.
+`
 
 #### Go
-| Version_Name | Architecture_Name | Environment_Variable |
-| ------------ | ----------------- | -------------------- |
-| 1.9.7        | x64               | GOROOT_1_9_X64       |
-| 1.10.8       | x64               | GOROOT_1_10_X64      |
-| 1.11.13      | x64               | GOROOT_1_11_X64      |
-| 1.12.17      | x64               | GOROOT_1_12_X64      |
-| 1.13.11      | x64               | GOROOT_1_13_X64      |
-| 1.14.3 (Default) | x64               | GOROOT_1_14_X64      |
+| Version | Architecture | Environment Variable |
+| ------- | ------------ | -------------------- |
+| 1.9.7   | x64          | GOROOT___X64         |
+| 1.10.8  | x64          | GOROOT___X64         |
+| 1.11.13 | x64          | GOROOT___X64         |
+| 1.12.17 | x64          | GOROOT___X64         |
+| 1.13.11 | x64          | GOROOT___X64         |
+| 1.14.3 (Default) | x64          | GOROOT___X64         |
 
 
 #### Node
-| Version_Name | Architecture_Name |
-| ------------ | ----------------- |
-| 8.17.0       | x64               |
-| 10.20.1      | x64               |
-| 12.16.3      | x64               |
-| 14.2.0       | x64               |
+| Version | Architecture |
+| ------- | ------------ |
+| 8.17.0  | x64          |
+| 10.20.1 | x64          |
+| 12.16.3 | x64          |
+| 14.2.0  | x64          |
 
 
 #### Python
-| Version_Name | Architecture_Name |
-| ------------ | ----------------- |
-| 2.7.18       | x64 x86           |
-| 3.5.4        | x64 x86           |
-| 3.6.8        | x64 x86           |
-| 3.7.7 (Default) | x64 x86           |
-| 3.8.3        | x64 x86           |
+| Version | Architecture |
+| ------- | ------------ |
+| 2.7.18  | x64          |
+| 3.5.4   | x64          |
+| 3.6.8   | x64          |
+| 3.7.7 (Default) | x64          |
+| 3.8.3   | x64          |
 
 
 #### Ruby
-| Version_Name | Architecture_Name |
-| ------------ | ----------------- |
-| 2.4.10       | x64               |
-| 2.5.8 (Default) | x64               |
-| 2.6.6        | x64               |
-| 2.7.1        | x64               |
+| Version | Architecture |
+| ------- | ------------ |
+| 2.4.10  | x64          |
+| 2.5.8 (Default) | x64          |
+| 2.6.6   | x64          |
+| 2.7.1   | x64          |
 
 
 #### PyPy
-| PyPy_Version | Python_Version | Architecture_Name |
-| ------------ | -------------- | ----------------- |
-| PyPy 7.3.1 with MSC v.1912 32 bit | 2.7.13         | x86               |
-| PyPy 7.3.1 with MSC v.1912 32 bit | 3.6.9          | x86               |
+| Python Version | Architecture | PyPy Version |
+| -------------- | ------------ | ------------ |
+| 2.7.13         | x86          | PyPy 7.3.1 with MSC v.1912 32 bit |
+| 3.6.9          | x86          | PyPy 7.3.1 with MSC v.1912 32 bit |
 
 
 
@@ -152,11 +148,10 @@ Set `Boost_NO_BOOST_CMAKE to ON`, to disable the search for boost-cmake.
 | ----------------------------- | --------------- | -------------------------------------------------------------- |
 | Visual Studio Enterprise 2017 | 15.9.28307.1146 | C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise |
 
-Workloads and components:
+#### Workloads and components:
+
 | Package                                                                   | version          |
 | ------------------------------------------------------------------------- | ---------------- |
-| Component.04a86fc2-dbd5-4222-848e-911638e487fe                            | 2.9.6            |
-| Component.717ad572-c4b7-435c-c166-c2969777f718                            | 2.6.3            |
 | Component.Anaconda3.x64                                                   | 5.2.0            |
 | Component.Android.NDK.R12B                                                | 12.1.10          |
 | Component.Android.NDK.R15C                                                | 15.2.1           |
@@ -168,9 +163,7 @@ Workloads and components:
 | Component.Android.SDK25.Private                                           | 15.9.28016.0     |
 | Component.Android.SDK27                                                   | 15.9.28016.0     |
 | Component.Ant                                                             | 1.9.3.8          |
-| Component.BAB64743-DA65-4501-B3A3-A73171C73D77                            | 6.0.1            |
 | Component.CordovaToolset.6.3.1                                            | 15.7.27625.0     |
-| Component.D1B09713-C12E-43CC-9EF4-6562298285AB                            | 2.6              |
 | Component.Dotfuscator                                                     | 15.0.26208.0     |
 | Component.Google.Android.Emulator.API27                                   | 15.9.28307.421   |
 | Component.HAXM                                                            | 15.9.28307.421   |
@@ -395,17 +388,14 @@ Workloads and components:
 | Microsoft.VisualStudio.Workload.Universal                                 | 15.9.28307.102   |
 | Microsoft.VisualStudio.Workload.VisualStudioExtension                     | 15.7.27625.0     |
 | Microsoft.VisualStudio.Workload.WebCrossPlat                              | 15.9.28307.341   |
+| SSDT Microsoft Analysis Services Projects                                 | 2.9.6            |
+| SSDT SQL Server Integration Services Projects                             | 2.6              |
+| SSDT Microsoft Reporting Services Projects                                | 2.6.3            |
+| Windows Driver Kit                                                        | 0.9.21.62588     |
+| Windows Driver Kit Visual Studio Extension                                | 10.1.17763.1     |
+| WIX Toolset                                                               | 0.9.21.62588     |
+| WIX Toolset Studio 2017 Extension                                         | 3.11.4516        |
 
-Extensions:
-| Package                                       | Version      |
-| --------------------------------------------- | ------------ |
-| SSDT Microsoft Analysis Services Projects     | 2.9.6        |
-| SSDT SQL Server Integration Services Projects | 2.6          |
-| SSDT Microsoft Reporting Services Projects    | 2.6.3        |
-| Windows Driver Kit                            | 0.9.21.62588 |
-| Windows Driver Kit Visual Studio Extension    | 10.1.17763.1 |
-| WIX Toolset                                   | 0.9.21.62588 |
-| WIX Toolset Studio 2017 Extension             | 3.11.4516    |
 ### .NET Core SDK
 `Location C:\Program Files\dotnet\sdk`
 - 1.1.14 2.1.202 2.1.300 2.1.301 2.1.302 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.1.506 2.1.507 2.1.508 2.1.509 2.1.510 2.1.511 2.1.512 2.1.513 2.1.514 2.1.602 2.1.603 2.1.604 2.1.605 2.1.606 2.1.607 2.1.608 2.1.609 2.1.610 2.1.611 2.1.700 2.1.701 2.1.801 2.1.802 2.1.803 2.1.804 2.1.805 2.1.806 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105 2.2.106 2.2.107 2.2.108 2.2.109 2.2.110 2.2.202 2.2.203 2.2.204 2.2.205 2.2.206 2.2.207 2.2.300 2.2.301 2.2.401 2.2.402 3.1.100 3.1.101 3.1.102 3.1.103 3.1.104 3.1.200 3.1.201 3.1.202 3.1.300
@@ -424,14 +414,9 @@ Extensions:
 - 3.1.0 3.1.1 3.1.2 3.1.3 3.1.4
 
 ### .NET Framework
-| Name              | Path                                                                       |
-| ----------------- | -------------------------------------------------------------------------- |
-| NETFX 4.6.1 Tools | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools |
-| NETFX 4.6.2 Tools | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.2 Tools |
-| NETFX 4.7 Tools   | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7 Tools   |
-| NETFX 4.7.1 Tools | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.1 Tools |
-| NETFX 4.7.2 Tools | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 Tools |
-| NETFX 4.8 Tools   | C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools   |
+`Location C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX <version> Tools`
+- 4.6.1 4.6.2 4.7 4.7.1 4.7.2 4.8
+
 ### Azure Powershell Modules
 | Module  | Version                                                         | Path                           |
 | ------- | --------------------------------------------------------------- | ------------------------------ |
@@ -498,15 +483,6 @@ All other versions are saved but not installed.
 | build-tools-29.0.0 | Android SDK Build-Tools, Revision 29.0.0 |
 | build-tools-29.0.2 | Android SDK Build-Tools, Revision 29.0.2 |
 | build-tools-29.0.3 | Android SDK Build-Tools, Revision 29.0.3 |
-
-### Android Google APIs
-| Package Name              | Description                                   |
-| ------------------------- | --------------------------------------------- |
-| addon-g..._apis-google-21 | Google APIs, Revision 1                       |
-| addon-g..._apis-google-22 | Google APIs, Revision 1                       |
-| addon-g..._apis-google-23 | Google Apis, Android 23, Revision 1.0.0       |
-| addon-g..._apis-google-24 | Google APIs, Revision 1                       |
-| a...google_apis           | Google APIs Intel x86 Atom Sys..., Revision 3 |
 
 ### Extra Packages
 | Package Name               | Version |
