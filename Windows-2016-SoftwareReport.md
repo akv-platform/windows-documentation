@@ -80,7 +80,8 @@
 ### MSYS2
 - Pacman 5.2.1
 ```
-Location C:\msys64
+Location: C:\msys64
+
 Note: MSYS2 is pre-installed on image but not added to PATH.
 ```
 ### Cached Tools
@@ -101,7 +102,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
    is loaded and this module returns with no further action.
    See documentation of the Boost CMake package configuration for details on what it provides.
    Set Boost_NO_BOOST_CMAKE to ON, to disable the search for boost-cmake.
-Link: https://cmake.org/cmake/help/latest/module/FindBoost.html
+   Link: https://cmake.org/cmake/help/latest/module/FindBoost.html
 ```
 
 #### Go
