@@ -91,11 +91,18 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | 1.72.0  | x64, x86     | BOOST_ROOT_1_72_0    |
 ##### Notes:
 ```
-    1. Environment variable "BOOST_ROOT" is not set by default. Please make sure you set this variable value to proper value from table above depending on the Boost version you are using.
-2. If Boost was built using the boost-cmake project or from Boost 1.70.0 on it provides a package configuration file for use with find_package's config mode. This module looks for the package configuration file called BoostConfig.cmake or boost-config.cmake and stores the result in CACHE entry "Boost_DIR". If found, the package configuration file is loaded and this module returns with no further action. See documentation of the Boost CMake package configuration for details on what it provides. Set Boost_NO_BOOST_CMAKE to ON, to disable the search for boost-cmake.
+1. Environment variable "BOOST_ROOT" is not set by default.
+   Please make sure you set this variable value to proper value
+   from table above depending on the Boost version you are using.
+2. If Boost was built using the boost-cmake project or from Boost 1.70.0
+   on it provides a package configuration file for use with find_package's config mode.
+   This module looks for the package configuration file called BoostConfig.cmake or boost-config.cmake
+   and stores the result in CACHE entry "Boost_DIR". If found, the package configuration file
+   is loaded and this module returns with no further action.
+   See documentation of the Boost CMake package configuration for details on what it provides.
+   Set Boost_NO_BOOST_CMAKE to ON, to disable the search for boost-cmake.
 Link: https://cmake.org/cmake/help/latest/module/FindBoost.html
 ```
-
 
 #### Go
 | Version | Architecture | Environment Variable |
@@ -120,11 +127,11 @@ Link: https://cmake.org/cmake/help/latest/module/FindBoost.html
 #### Python
 | Version | Architecture |
 | ------- | ------------ |
-| 2.7.18  | x64          |
-| 3.5.4   | x64          |
-| 3.6.8   | x64          |
-| 3.7.7 (Default) | x64          |
-| 3.8.3   | x64          |
+| 2.7.18  | x64, x86     |
+| 3.5.4   | x64, x86     |
+| 3.6.8   | x64, x86     |
+| 3.7.7 (Default) | x64, x86     |
+| 3.8.3   | x64, x86     |
 
 
 #### Ruby
