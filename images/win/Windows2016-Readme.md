@@ -1,4 +1,4 @@
-# Microsoft Windows Server 2016 Datacenter
+﻿# Microsoft Windows Server 2016 Datacenter
 - OS Version: 10.0.14393 Build 14393
 - Image Version: dev
 
@@ -92,6 +92,100 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 ### Cached Tools
 #### Boost
 | Version | Architecture | Environment Variable |
+# Microsoft Windows Server 2016 Datacenter
+- OS Version: 10.0.14393 Build 14393
+- Image Version: dev
+
+## Installed Software
+### Language and Runtime
+- Java 1.7.0_232 
+- Java 1.8.0_222 (default)
+- Java 11.0.4 
+- Java 13.0.3 
+- Rust 1.43.1
+- Python 3.7.7
+- Ruby 2.5.8p224
+- Go 1.14.3
+- PHP 7.4.5
+- Julia 1.4.2
+- Perl 5.30.2
+- PowerShell 7.0.1
+- Node 12.17.0
+
+### Package Management
+- Chocolatey 0.10.15
+- Vcpkg 2020.02.04
+- NPM 6.14.4
+- Yarn 1.22.4
+- pip 20.1.1 (python 3.7)
+- Miniconda 4.6.14
+- RubyGems 3.1.3
+- Helm 3.2.1
+- Composer 1.10.6
+
+### Project Management
+- Ant 1.10.5
+- Maven 3.6.3
+- Gradle 6.3
+
+### Tools
+- Azure CosmosDb Emulator 2.11.0.0
+- Bazel 3.2.0
+- Bazelisk 1.4.0
+- CMake 3.17.3
+- Docker 19.03.5
+- Docker-compose 1.25.5
+- Git 2.26.2
+- Git LFS 2.10.0
+- InnoSetup 6.0.5
+- jq 1.6
+- Kubectl 1.18.2
+- Kind 0.8.1
+- MinGW-w64 8.1.0
+- MySQL 5.7.21.0
+- Mercurial 5.0
+- NSIS 3.5.0.20200106
+- OpenSSL 1.1.1
+- Packer 1.5.6
+- SQLPS 1.0
+- SQLServer PS 21.1.18221
+- Subversion (SVN) 1.8.17
+- ghc 8.10.1
+- Cabal 3.2.0.0
+- Stack 2.3.1
+- WinAppDriver 1.1.1809.18001
+- zstd 1.4.0
+- VSWhere 2.8.4
+- 7zip 19.00
+
+### CLI Tools
+- Azure CLI 2.5.1
+- Azure DevOps CLI extension 0.18.0
+- AWS CLI 2.0.17
+- AWS SAM CLI 0.52.0
+- Alibaba CLI 3.0.26
+- Cloud Foundry CLI 6.51.0
+- Hub CLI 2.14.2
+
+### Browsers and webdrivers
+- Google Chrome 83.0.4103.61
+- Chrome Driver 83.0.4103.39
+- Microsoft Edge 83.0.478.37
+- Microsoft Edge Driver 83.0.478.37
+- Mozilla Firefox 76.0.1
+- Gecko Driver 0.26.0
+- IE Driver 3.150.1.0
+
+### MSYS2
+- Pacman 5.2.1
+```
+Location: C:\msys64
+
+Note: MSYS2 is pre-installed on image but not added to PATH.
+```
+### Cached Tools
+#### Boost
+| Version | Architecture | Environment Variable |
 | ------- | ------------ | -------------------- |
 | 1.69.0  | x64, x86     | BOOST_ROOT_1_69_0    |
 | 1.72.0  | x64, x86     | BOOST_ROOT_1_72_0    |
@@ -114,11 +208,11 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Version | Architecture | Environment Variable |
 | ------- | ------------ | -------------------- |
 | 1.9.7   | x64          | GOROOT_1_9_X64       |
-| 1.10.7  | x64          | GOROOT_1_10_X64      |
+| 1.10.8  | x64          | GOROOT_1_10_X64      |
 | 1.11.13 | x64          | GOROOT_1_11_X64      |
 | 1.12.17 | x64          | GOROOT_1_12_X64      |
 | 1.13.11 | x64          | GOROOT_1_13_X64      |
-| 1.14.2 (Default) | x64          | GOROOT_1_14_X64      |
+| 1.14.3 (Default) | x64          | GOROOT_1_14_X64      |
 
 
 #### Node
@@ -126,16 +220,16 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | ------- | ------------ |
 | 8.17.0  | x64          |
 | 10.20.1 | x64          |
-| 12.16.0 | x64          |
+| 12.17.0 | x64          |
 | 14.3.0  | x64          |
 
 
 #### Python
 | Version | Architecture |
 | ------- | ------------ |
-| 2.7.17  | x64, x86     |
+| 2.7.18  | x64, x86     |
 | 3.5.4   | x64, x86     |
-| 3.6.7   | x64, x86     |
+| 3.6.8   | x64, x86     |
 | 3.7.7 (Default) | x64, x86     |
 | 3.8.3   | x64, x86     |
 
@@ -153,7 +247,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Python Version | Architecture | PyPy Version |
 | -------------- | ------------ | ------------ |
 | 2.7.13         | x86          | PyPy 7.3.1 with MSC v.1912 32 bit |
-| 3.6.8          | x86          | PyPy 7.3.1 with MSC v.1912 32 bit |
+| 3.6.9          | x86          | PyPy 7.3.1 with MSC v.1912 32 bit |
 
 
 
@@ -195,7 +289,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Component.Redgate.SQLSearch.VSExtension                                   | 3.1.7.2062       |
 | Component.UnityEngine.x64                                                 | 15.9.28307.616   |
 | Component.Unreal                                                          | 15.8.27729.1     |
-| Component.Unreal.Android                                                  | 15.9.28307.333   |
+| Component.Unreal.Android                                                  | 15.9.28307.341   |
 | Component.WixToolset.VisualStudioExtension.Dev15                          | 0.9.21.62588     |
 | Component.Xamarin                                                         | 15.8.27906.1     |
 | Component.Xamarin.Profiler                                                | 15.0.27005.2     |
@@ -395,16 +489,16 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 | Microsoft.VisualStudio.Workload.NativeMobile                              | 15.9.28107.0     |
 | Microsoft.VisualStudio.Workload.NetCoreTools                              | 15.8.27906.1     |
 | Microsoft.VisualStudio.Workload.NetCrossPlat                              | 15.9.28107.0     |
-| Microsoft.VisualStudio.Workload.NetWeb                                    | 15.8.27906.0    |
+| Microsoft.VisualStudio.Workload.NetWeb                                    | 15.8.27906.1     |
 | Microsoft.VisualStudio.Workload.Node                                      | 15.9.28107.0     |
 | Microsoft.VisualStudio.Workload.Office                                    | 15.8.27924.0     |
 | Microsoft.VisualStudio.Workload.Python                                    | 15.8.27825.0     |
 | Microsoft.VisualStudio.Workload.Universal                                 | 15.9.28307.102   |
 | Microsoft.VisualStudio.Workload.VisualStudioExtension                     | 15.7.27625.0     |
 | Microsoft.VisualStudio.Workload.WebCrossPlat                              | 15.9.28307.341   |
-| SSDT Microsoft Analysis Services Projects                                 | 2.9.5           |
+| SSDT Microsoft Analysis Services Projects                                 | 2.9.6            |
 | SSDT SQL Server Integration Services Projects                             | 2.6              |
-| SSDT Microsoft Reporting Services Projects                                | 2.6.2           |
+| SSDT Microsoft Reporting Services Projects                                | 2.6.3            |
 | Windows Driver Kit                                                        | 0.9.21.62588     |
 | Windows Driver Kit Visual Studio Extension                                | 10.1.17763.1     |
 | WIX Toolset                                                               | 0.9.21.62588     |
@@ -412,11 +506,11 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 
 ### .NET Core SDK
 `Location C:\Program Files\dotnet\sdk`
-- 1.1.14 2.1.202 2.1.300 2.1.301 2.1.302 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.1.506 2.1.507 2.1.508 2.1.509 2.1.510 2.1.511 2.1.512 2.1.513 2.1.514 2.1.602 2.1.603 2.1.604 2.1.605 2.1.606 2.1.607 2.1.608 2.1.609 2.1.610 2.1.611 2.1.700 2.1.701 2.1.801 2.1.802 2.1.803 2.1.804 2.1.805 2.1.806 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105 2.2.106 2.2.107 2.2.108 2.2.109 2.2.110 2.2.202 2.2.203 2.2.204 2.2.205 2.2.206 2.2.207 2.2.300 2.2.301 2.2.401 2.2.402 3.1.100 3.1.101 3.1.102 3.1.103 3.1.104 3.1.200
+- 1.1.14 2.1.202 2.1.300 2.1.301 2.1.302 2.1.401 2.1.402 2.1.403 2.1.500 2.1.502 2.1.503 2.1.504 2.1.505 2.1.506 2.1.507 2.1.508 2.1.509 2.1.510 2.1.511 2.1.512 2.1.513 2.1.514 2.1.602 2.1.603 2.1.604 2.1.605 2.1.606 2.1.607 2.1.608 2.1.609 2.1.610 2.1.611 2.1.700 2.1.701 2.1.801 2.1.802 2.1.803 2.1.804 2.1.805 2.1.806 2.2.100 2.2.101 2.2.102 2.2.103 2.2.104 2.2.105 2.2.106 2.2.107 2.2.108 2.2.109 2.2.110 2.2.202 2.2.203 2.2.204 2.2.205 2.2.206 2.2.207 2.2.300 2.2.301 2.2.401 2.2.402 3.1.100 3.1.101 3.1.102 3.1.103 3.1.104 3.1.200 3.1.201 3.1.202 3.1.300
 
 ### .NET Core Runtime
 `Location C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All`
-- 2.1.0 2.1.1 2.1.2 2.1.3 2.1.4 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.1.13 2.1.14 2.1.15 2.1.16 2.1.17 2.1.18 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7
+- 2.1.0 2.1.1 2.1.2 2.1.3 2.1.4 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.1.13 2.1.14 2.1.15 2.1.16 2.1.17 2.1.18 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7 2.2.8
 
 `Location C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App`
 - 2.1.0 2.1.1 2.1.2 2.1.3 2.1.4 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.1.13 2.1.14 2.1.15 2.1.16 2.1.17 2.1.18 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7 2.2.8 3.1.0 3.1.1 3.1.2 3.1.3 3.1.4
@@ -497,7 +591,7 @@ All other versions are saved but not installed.
 | build-tools-29.0.0 | Android SDK Build-Tools, Revision 29.0.0 |
 | build-tools-29.0.1 | Android SDK Build-Tools, Revision 29.0.1 |
 | build-tools-29.0.2 | Android SDK Build-Tools, Revision 29.0.2 |
-| build-tools-29.0.3 | Android SDK Build-Tools, Revision 29.0.2 |
+| build-tools-29.0.3 | Android SDK Build-Tools, Revision 29.0.3 |
 
 ### Extra Packages
 | Package Name               | Version |
