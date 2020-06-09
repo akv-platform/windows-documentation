@@ -12,7 +12,7 @@
 - Python 3.7.7
 - Ruby 2.5.8p224
 - Go 1.14.3
-- PHP 7.4.4
+- PHP 7.4.5
 - Julia 1.4.2
 - Perl 5.30.2
 - PowerShell 7.0.1
