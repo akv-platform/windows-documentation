@@ -18,3 +18,4 @@ jobs:
         pr_title: ${{ github.event.client_payload.pr_title }}
         pr_body: ${{ github.event.client_payload.pr_description }}
         source_branch: ${{ github.event.client_payload.branch }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
