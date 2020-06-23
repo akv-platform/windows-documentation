@@ -17,7 +17,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        commitish: ${{ github.event.client_payload.commitish }}
+        tag_name: ${{ github.event.client_payload.tag_name }}
         release_name: ${{ github.event.client_payload.release_name }}
         body: ${{ github.event.client_payload.release_description }}
         draft: false
