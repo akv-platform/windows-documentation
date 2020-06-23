@@ -17,5 +17,5 @@ jobs:
       with:
         title: ${{ github.event.client_payload.pr_title }}
         body: ${{ github.event.client_payload.pr_description }}
-        branch: master
-        base: ${{ github.event.client_payload.pr_base }}
+        base: master
+        branch: ${{ github.event.client_payload.branch }}
