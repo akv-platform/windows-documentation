@@ -9,9 +9,9 @@
 - Java 11.0.4 
 - Java 13.0.3 
 - Rust 1.43.1
-- Python 3.7.7
+- Python 3.7.8
 - Ruby 2.5.8p224
-- Go 1.14.3
+- Go 1.14.4
 - PHP 7.4.5
 - Julia 1.4.2
 - Perl 5.30.2
