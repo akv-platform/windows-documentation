@@ -9,20 +9,20 @@
 - Java 11.0.4 
 - Java 13.0.3 
 - Rust 1.43.1
-- Python 3.7.7
+- Python 3.7.8
 - Ruby 2.5.8p224
 - Go 1.14.3
-- PHP 7.4.5
+- PHP 7.4.7
 - Julia 1.4.2
 - Perl 5.30.2
 - PowerShell 7.0.1
-- Node 12.17.0
+- Node 12.17.1
 
 ### Package Management
 - Chocolatey 0.10.15
 - Vcpkg 2020.02.04
 - NPM 6.14.4
-- Yarn 1.22.4
+- Yarn 1.22.5
 - pip 20.1.1 (python 3.7)
 - Miniconda 4.6.14
 - RubyGems 3.1.3
@@ -74,7 +74,7 @@
 - Hub CLI 2.14.2
 
 ### Browsers and webdrivers
-- Google Chrome 83.0.4103.61
+- Google Chrome 83.0.4103.62
 - Chrome Driver 83.0.4103.39
 - Microsoft Edge 83.0.478.37
 - Microsoft Edge Driver 83.0.478.37
@@ -445,7 +445,7 @@ All other versions are saved but not installed.
 ### Android SDK Tools
 | Package Name   | Description                                 |
 | -------------- | ------------------------------------------- |
-| platform-tools | Android SDK Platform-Tools, Revision 30.0.1 |
+| platform-tools | Android SDK Platform-Tools, Revision 30.0.2 |
 | tools          | Android SDK Tools 25.2.5, Revision 25.2.5   |
 
 ### Android SDK Platforms
