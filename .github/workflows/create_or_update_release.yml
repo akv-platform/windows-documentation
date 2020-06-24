@@ -21,4 +21,4 @@ jobs:
         name: "Test release"
         body: "Test description"
         prerelease: "true"
-        allowUpdates: "true"
+        allow_override: "true"
