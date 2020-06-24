@@ -11,9 +11,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    - name: Show diff
-      run: echo "${{ github.event.client_payload.release_description }}"
 
     - name: Create Release
       uses: meeDamian/github-release@2.0
@@ -22,6 +19,6 @@ jobs:
         commitish: ${{ github.event.client_payload.commitish }}
         tag: ${{ github.event.client_payload.tag }}
         name: ${{ github.event.client_payload.release_name }}
-        body: ${{ github.event.client_payload.release_description }}
+        body: "${{ github.event.client_payload.release_description }}"
         prerelease: ${{ github.event.client_payload.prerelease }}
         allow_override: ${{ github.event.client_payload.allow_override }}
