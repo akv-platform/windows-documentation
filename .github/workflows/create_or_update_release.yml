@@ -21,4 +21,4 @@ jobs:
         name: ${{ github.event.client_payload.release_name }}
         body: ${{ github.event.client_payload.release_description }}
         prerelease: ${{ github.event.client_payload.prerelease }}
-        allow_override: "true"
+        allow_override: ${{ github.event.client_payload.allow_override }}
