@@ -14,8 +14,6 @@ jobs:
 
     - name: Create Release
       uses: meeDamian/github-release@2.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commitish: ${{ github.event.client_payload.commitish }}
@@ -23,4 +21,4 @@ jobs:
         name: ${{ github.event.client_payload.release_name }}
         body: ${{ github.event.client_payload.release_description }}
         prerelease: ${{ github.event.client_payload.prerelease }}
-        allow_override: "true"
+        allow_override: ${{ github.event.client_payload.allow_override }}
