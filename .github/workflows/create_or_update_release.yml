@@ -17,7 +17,7 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commitish: ${{ github.event.client_payload.commitish }}
-        tag: "v1.2.4"
+        tag: ${{ github.event.client_payload.tag }}
         name: ${{ github.event.client_payload.release_name }}
         body: ${{ github.event.client_payload.release_description }}
         prerelease: ${{ github.event.client_payload.prerelease }}
