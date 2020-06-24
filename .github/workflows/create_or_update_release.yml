@@ -11,6 +11,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Show diff
+      run: echo ${{ github.event.client_payload.release_description }}
 
     - name: Create Release
       uses: meeDamian/github-release@2.0
