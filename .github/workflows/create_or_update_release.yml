@@ -19,6 +19,6 @@ jobs:
         commitish: "a5f78f1c793b7c4bd08eba6905bbc70771b1e402"
         tag: "v1.2.3"
         name: "Test release"
-        body: "Test description"
+        body: ${{ github.event.client_payload.release_description }}
         prerelease: "true"
         allow_override: "true"
