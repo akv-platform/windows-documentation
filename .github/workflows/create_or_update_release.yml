@@ -16,8 +16,8 @@ jobs:
       uses: meeDamian/github-release@2.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        commit: "a5f78f1c793b7c4bd08eba6905bbc70771b1e402"
-        tag: "v1.1.1"
+        commitish: "a5f78f1c793b7c4bd08eba6905bbc70771b1e402"
+        tag: ${{ github.event.client_payload.tag_name }}
         name: "Test release"
         body: "Test description"
         prerelease: "true"
