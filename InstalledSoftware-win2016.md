@@ -513,4 +513,3 @@ All other versions are saved but not installed.
 -  microsoft/aspnetcore-build:1.0-2.0
 -  mcr.microsoft.com/windows/nanoserver:10.0.14393.953
 
-
