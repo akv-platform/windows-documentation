@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: Create Pull Request
+    - name: Create pull request for ${{ github.event.client_payload.image_version }}
       uses: repo-sync/pull-request@v2
       with:
         pr_title: ${{ github.event.client_payload.pr_title }}
