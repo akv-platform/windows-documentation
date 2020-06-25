@@ -17,6 +17,8 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         tag: ${{ github.event.client_payload.branch }}
+        commit: ${{ github.event.client_payload.commit }}
         name: ${{ github.event.client_payload.release_name }}
         body: ${{ github.event.client_payload.release_description }}
         prerelease: ${{ github.event.client_payload.prerelease }}
+        allowUpdates: "true"
