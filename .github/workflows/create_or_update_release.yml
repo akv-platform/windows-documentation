@@ -13,11 +13,10 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Create Release
-      uses: softprops/action-gh-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ncipollo/release-action@v1
       with:
-        tag_name: ${{ github.event.client_payload.branch }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: ${{ github.event.client_payload.branch }}
         name: ${{ github.event.client_payload.release_name }}
         body: ${{ github.event.client_payload.release_description }}
         prerelease: ${{ github.event.client_payload.prerelease }}
