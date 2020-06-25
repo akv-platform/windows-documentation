@@ -8,7 +8,7 @@
 - Java 1.8.0_222 (default)
 - Java 11.0.4 
 - Java 13.0.3 
-- Rust 1.43.1
+- Rust 1.43.2
 - Python 3.7.8
 - Ruby 2.5.8p224
 - Go 1.14.3
@@ -19,7 +19,7 @@
 - Node 12.17.1
 
 ### Package Management
-- Chocolatey 0.10.15
+- Chocolatey 0.10.16
 - Vcpkg 2020.02.04
 - NPM 6.14.4
 - Yarn 1.22.5
@@ -32,7 +32,7 @@
 ### Project Management
 - Ant 1.10.5
 - Maven 3.6.3
-- Gradle 6.3
+- Gradle 6.4
 
 ### Tools
 - Azure CosmosDb Emulator 2.11.0.0
