@@ -4,7 +4,7 @@
 
 ## Installed Software
 ### Language and Runtime
-- Java 1.7.0_232 
+- Java 1.7.0_233
 - Java 1.8.0_222 (default)
 - Java 11.0.4 
 - Java 13.0.3 
@@ -35,7 +35,7 @@
 - Gradle 6.4
 
 ### Tools
-- Azure CosmosDb Emulator 2.11.0.0
+- Azure CosmosDb Emulator 2.11.0.1
 - Bazel 3.2.0
 - Bazelisk 1.4.0
 - CMake 3.17.3
