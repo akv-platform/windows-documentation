@@ -19,6 +19,6 @@ jobs:
       with:
         tag_name: ${{ github.event.client_payload.branch }}
         release_name: ${{ github.event.client_payload.release_name }}
-        body: "Test release description"
+        body: ${{ github.event.client_payload.release_description }}
         prerelease: ${{ github.event.client_payload.prerelease }}
         commitish: ${{ github.event.client_payload.commitish }}
