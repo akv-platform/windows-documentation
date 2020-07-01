@@ -23,5 +23,5 @@ jobs:
             ${{ github.event.client_payload.pr_title }},
             ${{ github.event.client_payload.pr_branch }},
             ${{ github.event.client_payload.pr_base }},
-            ${{ github.event.client_payload.pr_body }},
+            "${{ github.event.client_payload.pr_body }}"
           });
