@@ -21,4 +21,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               tag: "${{ github.event.client_payload.branch }}"
-            }).then(response => console.log(response));
+            }).then(response => process.env.RELEASE_ID = response.data.id);
+            
+    - name: Test
+      run: env
