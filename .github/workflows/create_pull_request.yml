@@ -17,7 +17,6 @@ jobs:
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
-          const body = "${{ github.event.client_payload.pr_body }}"
           github.pulls.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
