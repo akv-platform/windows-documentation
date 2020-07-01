@@ -21,11 +21,12 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               tag: "${{ github.event.client_payload.branch }}"
-            }).then(response => github.repos.updateRelease({
-                     owner: context.repo.owner,
-                     repo: context.repo.repo,
-                     release_id: response.data.id,
-                     prerelease: false
-                   });
-               );
+            }).then(response => {
+                      github.repos.updateRelease({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        release_id: response.data.id,
+                        prerelease: false
+                      });
+                 });
 
