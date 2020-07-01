@@ -18,10 +18,10 @@ jobs:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
           octokit.pulls.create({
-            ${{ github.event.client_payload.organization }},
-            ${{ github.event.client_payload.repository }},
-            ${{ github.event.client_payload.pr_title }},
+            "${{ github.event.client_payload.organization }}",
+            "${{ github.event.client_payload.repository }}",
+            "${{ github.event.client_payload.pr_title }}",
             "${{ github.event.client_payload.pr_branch }}",
-            ${{ github.event.client_payload.pr_base }},
+            "${{ github.event.client_payload.pr_base }}",
             "${{ github.event.client_payload.pr_body }}"
           });
