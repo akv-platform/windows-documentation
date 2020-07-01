@@ -26,6 +26,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               release_id: response.data.id,
-              prerelease: false
+              prerelease: true
             });
 
