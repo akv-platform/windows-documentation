@@ -18,9 +18,10 @@ jobs:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
           github.pulls.create({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            title: ${{ github.event.client_payload.pr_title }},
-            head: ${{ github.event.client_payload.pr_branch }},
-            base: ${{ github.event.client_payload.pr_base }},
+            owner: "akv-platform",
+            repo: "windows-documentation",
+            title: "Test PR",
+            head: "release-branch",
+            base: "master",
+            body: "PR description"
           });
