@@ -21,7 +21,7 @@ jobs:
             owner: context.repo.owner,
             repo: context.repo.repo,
             title: "${{ github.event.client_payload.pr_title }}",
-            head: "release-branch",
-            base: "master",
+            head: "${{ github.event.client_payload.pr_branch }}",
+            base: "${{ github.event.client_payload.pr_base }}",
             body: "PR description"
           });
