@@ -20,7 +20,7 @@ jobs:
           github.pulls.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            title: ${{ github.event.client_payload.pr_title }},
+            title: "${{ github.event.client_payload.pr_title }}",
             head: "release-branch",
             base: "master",
             body: "PR description"
