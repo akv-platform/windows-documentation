@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Get release id for pre-release ${{ github.event.client_payload.ReleaseBranchName }}
+    - name: Get release id for pre-release ${{ github.event.client_payload.branch }}
       uses: actions/github-script@v2
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
