@@ -14,9 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Merge pull request for ${{ github.event.client_payload.image_version }}
-      uses: juliangruber/merge-pull-request-action@v1
+    - name: Merge pull request for ${{ github.event.client_payload.branch }}
+      uses: actions/github-script@v2
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        number: ${{ github.event.client_payload.PullRequestNumber }}
-        method: squash
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          github.pulls.merge({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: ${{ github.event.client_payload.PullRequestNumber }}
+          })
