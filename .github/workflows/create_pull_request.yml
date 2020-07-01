@@ -23,5 +23,5 @@ jobs:
             title: ${{ github.event.client_payload.pr_title }},
             head: ${{ github.event.client_payload.pr_branch }},
             base: ${{ github.event.client_payload.pr_base }},
-            body: "${{ github.event.client_payload.pr_body }}"
+            body: "test description"
           });
