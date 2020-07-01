@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Get release id for pre-release ${{ github.event.client_payload.branch }}
+    - name: Update release for ${{ github.event.client_payload.branch }}
       uses: actions/github-script@v2
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
@@ -21,7 +21,10 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               tag: "${{ github.event.client_payload.branch }}"
-            }).then(response => process.env.RELEASE_ID = response.data.id);
-            
-    - name: Test
-      run: env
+            }).then(response => octokit.repos.updateRelease({
+                     owner: context.repo.owner,
+                     repo: context.repo.repo,
+                     release_id: response.data.id,
+                     prerelease: false
+                   });)
+
