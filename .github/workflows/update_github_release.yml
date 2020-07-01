@@ -17,9 +17,8 @@ jobs:
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
-            const response = github.repos.getReleaseByTag({
+            github.repos.getReleaseByTag({
               owner: context.repo.owner,
               repo: context.repo.repo,
               tag: "${{ github.event.client_payload.branch }}"
-            });
-            console.log(response);
+            }).then(response => console.log(response));
