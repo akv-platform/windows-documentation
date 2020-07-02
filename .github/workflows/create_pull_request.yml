@@ -14,7 +14,7 @@ jobs:
     
     - name: escape slashes on software diff
       run: |
-        $diff = $(${{ github.event.client_payload.pr_body }} -replace "\", "\\")
+        $diff = $("${{ github.event.client_payload.pr_body }}" -replace "\", "\\")
         Write-Host "::set-env name=SoftwareDiff::$diff"
     
     - name: Create pull request for ${{ github.event.client_payload.ReleaseBranchName }}
