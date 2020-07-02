@@ -418,7 +418,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 `Location C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All`
 - 2.1.0 2.1.1 2.1.2 2.1.3 2.1.4 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.1.13 2.1.14 2.1.15 2.1.16 2.1.17 2.1.18 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7 2.2.8
 
-`Location C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App`
+`Location net C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App`
 - 2.1.0 2.1.1 2.1.2 2.1.3 2.1.4 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.1.13 2.1.14 2.1.15 2.1.16 2.1.17 2.1.18 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7 2.2.8 3.1.0 3.1.1 3.1.2 3.1.3 3.1.4
 
 `Location C:\Program Files\dotnet\shared\Microsoft.NETCore.App`
