@@ -7,21 +7,27 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: escape slashes on software diff
+      run: |
+        $diff = $(${{ github.event.client_payload.pr_body }} -replace "\", "\\")
+        Write-Host "::set-env name=SoftwareDiff::$diff"
     
     - name: Create pull request for ${{ github.event.client_payload.ReleaseBranchName }}
       uses: actions/github-script@v2
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
+          const body = ${{ github.event.client_payload.pr_body }}
           github.pulls.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
             title: "${{ github.event.client_payload.pr_title }}",
             head: "${{ github.event.client_payload.pr_branch }}",
             base: "${{ github.event.client_payload.pr_base }}",
-            body: `${{ github.event.client_payload.pr_body }}`
+            body: `$SoftwareDiff`
           });
