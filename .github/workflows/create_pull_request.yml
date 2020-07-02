@@ -19,6 +19,8 @@ jobs:
     
     - name: Create pull request for ${{ github.event.client_payload.ReleaseBranchName }}
       uses: actions/github-script@v2
+      env:
+        SoftwareDiff: $SoftwareDiff
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
