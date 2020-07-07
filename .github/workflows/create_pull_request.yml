@@ -1,4 +1,4 @@
-name: Create Pull Request
+name: Create Pull Request for ${{ github.event.client_payload.ReleaseBranchName }}
 
 on:
   repository_dispatch:
