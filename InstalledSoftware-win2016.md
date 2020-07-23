@@ -1,5 +1,6 @@
 ## Announcements
 | One announcement |
+|-|
 | Two announcement |
 ***
 
