@@ -2,7 +2,6 @@
 |-|
 | One announcement |
 | Two announcement |
-| Three announcement |
 ***
 
 # Microsoft Windows Server 2016 Datacenter
