@@ -1,3 +1,8 @@
+ | Announcements |
+ |-|
+ | Old announcement |
+ ***
+
 # Microsoft Windows Server 2016 Datacenter
 - OS Version: 10.0.14393 Build 14393
 - Image Version: dev
