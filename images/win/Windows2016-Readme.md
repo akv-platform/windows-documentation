@@ -16,7 +16,7 @@
 - Julia 1.4.2
 - Perl 5.30.2
 - PowerShell 7.0.1
-- Node 12.17.1
+- Node 12.17.3
 
 ### Package Management
 - Chocolatey 0.10.16
