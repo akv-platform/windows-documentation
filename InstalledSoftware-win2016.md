@@ -16,7 +16,7 @@
 - Julia 1.4.2
 - Perl 5.30.2
 - PowerShell 7.0.1
-- Node 12.17.2
+- Node 12.17.1
 
 ### Package Management
 - Chocolatey 0.10.16
@@ -160,7 +160,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 ### Visual Studio Enterprise 2017
 | Name                          | Version         | Path                                                           |
 | ----------------------------- | --------------- | -------------------------------------------------------------- |
-| Visual Studio Enterprise 2017 | 15.9.28307.1147 | C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise |
+| Visual Studio Enterprise 2017 | 15.9.28307.1146 | C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise |
 
 #### Workloads, components and extensions:
 
