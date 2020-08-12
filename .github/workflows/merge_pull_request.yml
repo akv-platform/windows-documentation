@@ -22,6 +22,17 @@ jobs:
         git merge --no-edit --strategy-option=ours master
         git push origin ${{ github.event.client_payload.ReleaseBranchName }}-pull-request
         sleep 30
+        
+    - name: Merge pull request for ${{ github.event.client_payload.ReleaseBranchName }}
+      uses: actions/github-script@v2
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          github.pulls.merge({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: ${{ github.event.client_payload.PullRequestNumber }}
+          })
       
     - name: Delete docs branch
       uses: actions/github-script@v2
