@@ -11,6 +11,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Clone release branch to create pull request
+      run: |
+        git config --global user.email "no-reply@github.com"
+        git config --global user.name "Actions service account"
+        git checkout ${{ github.event.client_payload.ReleaseBranchName }}
+        git checkout -b "${{ github.event.client_payload.ReleaseBranchName }}/pull-request-branch"
+        git push origin "${{ github.event.client_payload.ReleaseBranchName }}/pull-request-branch"
 
     - name: Create pull request for ${{ github.event.client_payload.ReleaseBranchName }}
       uses: actions/github-script@v2
@@ -21,7 +29,7 @@ jobs:
             owner: context.repo.owner,
             repo: context.repo.repo,
             title: "${{ github.event.client_payload.PullRequestTitle }}",
-            head: "${{ github.event.client_payload.ReleaseBranchName }}",
+            head: "${{ github.event.client_payload.ReleaseBranchName }}/pull-request-branch",
             base: "${{ github.event.client_payload.PullRequestBase }}",
             body: `${{ github.event.client_payload.PullRequestBody }}`
           });
