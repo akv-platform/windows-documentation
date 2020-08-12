@@ -16,8 +16,6 @@ jobs:
     
     - name: Clone release branch to create pull request
       run: |
-        git config --global user.email "no-reply@github.com"
-        git config --global user.name "Actions service account"
         git checkout ${{ github.event.client_payload.ReleaseBranchName }}
         git branch ${{ github.event.client_payload.ReleaseBranchName }}-pull-request
         git push origin ${{ github.event.client_payload.ReleaseBranchName }}-pull-request
