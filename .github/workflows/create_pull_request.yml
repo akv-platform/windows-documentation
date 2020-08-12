@@ -20,7 +20,7 @@ jobs:
         git config --global user.name "Actions service account"
         git checkout ${{ github.event.client_payload.ReleaseBranchName }}
         git checkout -b "${{ github.event.client_payload.ReleaseBranchName }}/pull-request-branch"
-        git push origin "${{ github.event.client_payload.ReleaseBranchName }}/pull-request-branch"
+        git push origin "${{ github.event.client_payload.ReleaseBranchName }}/pull-request-branch" --force
 
     - name: Create pull request for ${{ github.event.client_payload.ReleaseBranchName }}
       uses: actions/github-script@v2
