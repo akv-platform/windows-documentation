@@ -31,5 +31,5 @@ jobs:
           github.git.deleteRef({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            ref: ${{ github.event.client_payload.ReleaseBranchName }}-pull-request
+            ref: "heads/${{ github.event.client_payload.ReleaseBranchName }}-pull-request"
           })
