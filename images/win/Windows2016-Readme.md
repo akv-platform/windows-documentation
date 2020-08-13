@@ -8,7 +8,7 @@
 - Java 1.8.0_222 (default)
 - Java 11.0.4 
 - Java 13.0.3 
-- Rust 1.43.2
+- Rust 1.43.3
 - Python 3.7.8
 - Ruby 2.5.8p224
 - Go 1.14.3
