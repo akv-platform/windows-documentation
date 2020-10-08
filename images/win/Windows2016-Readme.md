@@ -4,11 +4,11 @@
 
 ## Installed Software
 ### Language and Runtime
-- Java 1.7.0_233
+- Java 1.7.0_233 
 - Java 1.8.0_222 (default)
 - Java 11.0.4 
 - Java 13.0.3 
-- Rust 1.43.3
+- Rust 1.43.2
 - Python 3.7.8
 - Ruby 2.5.8p224
 - Go 1.14.3
@@ -16,7 +16,7 @@
 - Julia 1.4.2
 - Perl 5.30.2
 - PowerShell 7.0.1
-- Node 12.17.2
+- Node 12.17.1
 
 ### Package Management
 - Chocolatey 0.10.16
@@ -160,7 +160,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 ### Visual Studio Enterprise 2017
 | Name                          | Version         | Path                                                           |
 | ----------------------------- | --------------- | -------------------------------------------------------------- |
-| Visual Studio Enterprise 2017 | 15.9.28307.1147 | C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise |
+| Visual Studio Enterprise 2017 | 15.9.28307.1146 | C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise |
 
 #### Workloads, components and extensions:
 
@@ -418,7 +418,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 `Location C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All`
 - 2.1.0 2.1.1 2.1.2 2.1.3 2.1.4 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.1.13 2.1.14 2.1.15 2.1.16 2.1.17 2.1.18 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7 2.2.8
 
-`Location C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App`
+`Location net C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App`
 - 2.1.0 2.1.1 2.1.2 2.1.3 2.1.4 2.1.5 2.1.6 2.1.7 2.1.8 2.1.9 2.1.10 2.1.11 2.1.12 2.1.13 2.1.14 2.1.15 2.1.16 2.1.17 2.1.18 2.2.0 2.2.1 2.2.2 2.2.3 2.2.4 2.2.5 2.2.6 2.2.7 2.2.8 3.1.0 3.1.1 3.1.2 3.1.3 3.1.4
 
 `Location C:\Program Files\dotnet\shared\Microsoft.NETCore.App`
@@ -512,5 +512,4 @@ All other versions are saved but not installed.
 -  mcr.microsoft.com/windows/servercore:ltsc2016
 -  microsoft/aspnetcore-build:1.0-2.0
 -  mcr.microsoft.com/windows/nanoserver:10.0.14393.953
-
 
