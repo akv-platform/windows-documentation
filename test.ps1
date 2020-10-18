@@ -1,2 +1,2 @@
-$test = $env:Github-PAT
+$test = $env:Github
 Write-Host $test
