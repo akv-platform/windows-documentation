@@ -1,5 +1,5 @@
-$imageAlias = $(ImageAlias)
+$imageAlias = $env:ImageAlias
 Write-Host "Image Alias: $imageAlias"
 
-$test = $(Github)
+$test = $env:Github
 Write-Host "Github: $test"
