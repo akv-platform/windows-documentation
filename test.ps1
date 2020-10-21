@@ -1,6 +1,6 @@
 Write-Host "running test.ps1..."
 
-$imageAlias = $(ImageAlias)
+$imageAlias = $env:ImageAlias
 Write-Host "Image Alias: $imageAlias"
 
 $github = $env:Github
